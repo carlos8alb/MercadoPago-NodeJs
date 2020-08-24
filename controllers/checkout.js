@@ -14,10 +14,18 @@ function create(req, res) {
     // Crea un objeto de preferencia
     let preference = {
         items: [{
-            title: 'Pago impuestos',
-            unit_price: parseFloat(body.monto),
-            quantity: 1
-        }],
+                id: 'id-alumbrado',
+                title: 'Alumbrado',
+                unit_price: 150,
+                quantity: 1
+            },
+            {
+                id: 'id-barrido',
+                title: 'Barrido',
+                unit_price: 300,
+                quantity: 1
+            }
+        ],
         external_reference: config.external_reference,
         notification_url: config.notification_url
     };
